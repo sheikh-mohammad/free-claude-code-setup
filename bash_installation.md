@@ -12,29 +12,7 @@
 npm install -g @anthropic-ai/claude-code @musistudio/claude-code-router
 ```
 
-### Step 2: Extract Your Access Token
-
-Replace `PC_USER` with your pc username.
-
-Open `C:\Users\PC_USER\.qwen\oauth_creds.json`:
-
-```bash
-cat C:/Users/PC_USER/.qwen/oauth_creds.json
-```
-
-It should look something like this
-```json
-{
-  "access_token": "YOUR_QWEN_ACCESS_TOKEN_HERE",
-  "token_type": "Bearer",
-  "refresh_token": "$QWEN_API_KEY",
-  "resource_url": "portal.qwen.ai",
-  "expiry_date": 1764876220290
-}
-```
-Copy the `access_token` value:
-
-### **Step 3: Create the Folders**
+### **Step 2: Create the Folders**
 
 Paste this into bash terminal:
 
@@ -42,19 +20,9 @@ Paste this into bash terminal:
 mkdir -p ~/.claude-code-router ~/.claude
 ```
 
-Paste your qwen access token from oauth_creds.json file by replacing with **YOUR_QWEN_ACCESS_TOKEN_HERE**
-
-```bash
-echo 'export QWEN_API_KEY="YOUR_QWEN_ACCESS_TOKEN_HERE"' >> ~/.bashrc
-source ~/.bashrc
-```
-
-> **Check Your Shell**
-> Run `echo $SHELL` to see your shell. If it shows `/bin/zsh`, use ~/.zshrc instead of ~/.bashrc. If it shows `/usr/bin/bash`, stay with defualt (specified above)
-
 ---
 
-### **Step 4: Create the Config File**
+### **Step 3: Create the Config File**
 
 Paste this command to create and populate the config file:
 
@@ -90,8 +58,46 @@ cat > ~/.claude-code-router/config.json << 'EOF'
 EOF
 ```
 
+### Step 4: Extract Your Access Token
 
-### Step 4: Start Using
+Replace `PC_USER` with your pc username.
+
+Open `C:\Users\PC_USER\.qwen\oauth_creds.json`:
+
+```bash
+cat C:/Users/PC_USER/.qwen/oauth_creds.json
+```
+
+It should look something like this
+```json
+{
+  "access_token": "YOUR_QWEN_ACCESS_TOKEN_HERE",
+  "token_type": "Bearer",
+  "refresh_token": "$QWEN_API_KEY",
+  "resource_url": "portal.qwen.ai",
+  "expiry_date": 1764876220290
+}
+```
+Copy the `access_token` value:
+
+Paste your qwen access token from oauth_creds.json file by replacing with **YOUR_QWEN_ACCESS_TOKEN_HERE**
+
+```bash
+echo 'export QWEN_API_KEY="YOUR_QWEN_ACCESS_TOKEN_HERE"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+> **Check Your Shell**
+> Run `echo $SHELL` to see your shell. If it shows `/bin/zsh`, use ~/.zshrc instead of ~/.bashrc. If it shows `/usr/bin/bash`, stay with defualt (specified above)
+
+like this:
+
+```bash
+   echo 'export QWEN_API_KEY="YOUR_QWEN_ACCESS_TOKEN_HERE"' >> ~/.zshrc
+   source ~/.zshrc
+   ```
+
+### Step 5: Start Using
 
 Restart the router server:
 
