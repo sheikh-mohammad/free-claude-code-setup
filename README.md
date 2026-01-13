@@ -3,6 +3,7 @@
 ## Prerequisites
 *   **Node.js (v18+):** Ensure Node.js is installed.
 *   **Qwen CLI:** Installed and authenticated.
+*   **Claude Code:** Installed and working fine
 
 ---
 
