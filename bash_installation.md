@@ -42,6 +42,14 @@ Paste this into bash terminal:
 mkdir -p ~/.claude-code-router ~/.claude
 ```
 
+Paste your qwen access token from oauth_creds.json file by replacing with **YOUR_QWEN_ACCESS_TOKEN_HERE**
+
+echo 'export QWEN_API_KEY="YOUR_QWEN_ACCESS_TOKEN_HERE"' >> ~/.bashrc
+source ~/.bashrc
+
+> **Check Your Shell**
+> Run `echo $SHELL` to see your shell. If it shows `/bin/zsh`, use ~/.zshrc instead of ~/.bashrc. If it shows `/usr/bin/bash`, stay with defualt (specified above)
+
 ---
 
 ### **Step 4: Create the Config File**
