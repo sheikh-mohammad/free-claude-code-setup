@@ -6,10 +6,12 @@
 
 ---
 
-### Step 1: Install Claude Code Router
+### Step 1: Install Required Packages
+
+Open bash terminal and run the following command to install the Qwen Code, Claude Code, and the Claude Code Router:
 
 ```bash
-npm install -g @anthropic-ai/claude-code @musistudio/claude-code-router
+npm install -g @qwen-code/qwen-code@latest @anthropic-ai/claude-code @musistudio/claude-code-router
 ```
 
 ### **Step 2: Create the Folders**
