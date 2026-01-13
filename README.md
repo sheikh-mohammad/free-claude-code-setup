@@ -13,6 +13,8 @@
 
 ---
 
+## Installing all Prerequisites
+
 ### Step 2: Install the Claude Code
 
 Open bash terminal and run the following command to install the Qwen Code
