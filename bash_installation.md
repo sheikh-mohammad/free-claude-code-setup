@@ -8,7 +8,7 @@
 
 ### Step 1: Install Claude Code Router
 
-```sh
+```bash
 npm install -g @anthropic-ai/claude-code @musistudio/claude-code-router
 ```
 
@@ -18,7 +18,7 @@ Replace `PC_USER` with your pc username.
 
 Open `C:\Users\PC_USER\.qwen\oauth_creds.json`:
 
-```sh
+```bash
 cat C:/Users/PC_USER/.qwen/oauth_creds.json
 ```
 
@@ -38,14 +38,16 @@ Copy the `access_token` value:
 
 Paste this into bash terminal:
 
-```sh
+```bash
 mkdir -p ~/.claude-code-router ~/.claude
 ```
 
 Paste your qwen access token from oauth_creds.json file by replacing with **YOUR_QWEN_ACCESS_TOKEN_HERE**
 
+```bash
 echo 'export QWEN_API_KEY="YOUR_QWEN_ACCESS_TOKEN_HERE"' >> ~/.bashrc
 source ~/.bashrc
+```
 
 > **Check Your Shell**
 > Run `echo $SHELL` to see your shell. If it shows `/bin/zsh`, use ~/.zshrc instead of ~/.bashrc. If it shows `/usr/bin/bash`, stay with defualt (specified above)
@@ -56,7 +58,7 @@ source ~/.bashrc
 
 Paste this command to create and populate the config file:
 
-```sh
+```bash
 cat > ~/.claude-code-router/config.json << 'EOF'
 {  
   "LOG": true,  
@@ -93,17 +95,18 @@ EOF
 
 Restart the router server:
 
-```sh
+```bash
 ccr restart
 ```
 
 Run Claude Code with Qwen models: 
 
-```sh
+```bash
 ccr code
 ```
 
 Test with:
+
 ```
 > hi
 ```
@@ -115,8 +118,15 @@ Test with:
 Your OAuth token expires. Refresh it by:
 1. Re-authenticating your QWEN CODE CLI: If already logged in and the access_token matches in both `config.json` and `oauth_creds.json`, delete the oauth_creds.json file and run `qwen` to initiate re-authentication.
 2. Update the `api_key` in your config.json with the new access_token:
-   ```sh
+   ```bash
    echo 'export QWEN_API_KEY="YOUR_QWEN_ACCESS_TOKEN_HERE"' >> ~/.bashrc
    source ~/.bashrc
    ```
-3. Restart: `ccr restart`
+
+   or
+
+   ```bash
+   echo 'export QWEN_API_KEY="YOUR_QWEN_ACCESS_TOKEN_HERE"' >> ~/.zshrc
+   source ~/.zshrc
+   ```
+4. Restart: `ccr restart`
