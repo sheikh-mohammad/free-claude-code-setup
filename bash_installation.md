@@ -14,7 +14,7 @@ npm install -g @anthropic-ai/claude-code @musistudio/claude-code-router
 
 ### Step 2: Extract Your Access Token
 
-Replace `PC_USER` with your Windows username.
+Replace `PC_USER` with your pc username.
 
 Open `C:\Users\PC_USER\.qwen\oauth_creds.json`:
 
@@ -27,7 +27,7 @@ It should look something like this
 {
   "access_token": "YOUR_QWEN_ACCESS_TOKEN_HERE",
   "token_type": "Bearer",
-  "refresh_token": "YOUR_QWEN_REFRESH_TOKEN_HERE",
+  "refresh_token": "$QWEN_API_KEY",
   "resource_url": "portal.qwen.ai",
   "expiry_date": 1764876220290
 }
@@ -36,7 +36,7 @@ Copy the `access_token` value:
 
 ### **Step 3: Create the Folders**
 
-Paste this into WSL terminal:
+Paste this into bash terminal:
 
 ```sh
 mkdir -p ~/.claude-code-router ~/.claude
@@ -60,7 +60,7 @@ cat > ~/.claude-code-router/config.json << 'EOF'
     {  
       "name": "qwen",  
       "api_base_url": "https://portal.qwen.ai/v1/chat/completions",  
-      "api_key": "YOUR_QWEN_ACCESS_TOKEN_HERE",  
+      "api_key": "$QWEN_API_KEY",  
       "models": [  
         "qwen3-coder-plus",  
         "qwen3-coder-plus",  
