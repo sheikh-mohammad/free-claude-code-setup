@@ -1,4 +1,6 @@
-# How to Use Claude Code with Qwen models for Free on WSL/Git Bash/Mac OS/Linux Bash
+# How to Use Claude Code with Qwen models for Free on Bash WSL/Git Bash/Mac OS/Linux Bash
+
+This installation guide can be followed in Bash, WSL, Git Bash and as well as in Mac OS.
 
 ## Prerequisites
 - Qwen CLI installed and authenticated
