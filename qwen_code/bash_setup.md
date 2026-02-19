@@ -1,6 +1,6 @@
 # How to Use Claude Code with Qwen models for Free on Bash
 
-This installation guide can be followed in Bash, WSL, Git Bash and as well as in Mac OS.
+This installation guide can be followed in Bash, WSL, Git Bash, and macOS.
 
 ## Prerequisites
 - Qwen CLI installed and authenticated
@@ -10,7 +10,7 @@ This installation guide can be followed in Bash, WSL, Git Bash and as well as in
 
 ### Step 1: Install Required Packages
 
-Open bash terminal and run the following command to install the Qwen Code, Claude Code, and the Claude Code Router:
+Open a bash terminal and run the following command to install the Qwen Code, Claude Code, and the Claude Code Router:
 
 ```bash
 npm install -g @qwen-code/qwen-code@latest @anthropic-ai/claude-code @musistudio/claude-code-router
@@ -18,7 +18,7 @@ npm install -g @qwen-code/qwen-code@latest @anthropic-ai/claude-code @musistudio
 
 ### **Step 2: Create the Folders**
 
-Paste this into bash terminal:
+Paste this into the bash terminal:
 
 ```bash
 mkdir -p ~/.claude-code-router ~/.claude
@@ -82,7 +82,7 @@ It should look something like this
 ```
 Copy the `access_token` value:
 
-Paste your qwen access token from oauth_creds.json file by replacing with **YOUR_QWEN_ACCESS_TOKEN_HERE**
+Paste your Qwen access token from the oauth_creds.json file by replacing it with **YOUR_QWEN_ACCESS_TOKEN_HERE**
 
 ```bash
 echo 'export QWEN_API_KEY="YOUR_QWEN_ACCESS_TOKEN_HERE"' >> ~/.bashrc
@@ -90,7 +90,7 @@ source ~/.bashrc
 ```
 
 > **Check Your Shell**
-> Run `echo $SHELL` to see your shell. If it shows `/bin/zsh`, use ~/.zshrc instead of ~/.bashrc. If it shows `/usr/bin/bash`, stay with defualt (specified above)
+> Run `echo $SHELL` to see your shell. If it shows `/bin/zsh`, use ~/.zshrc instead of ~/.bashrc. If it shows `/usr/bin/bash`, stay with default (specified above)
 
 like this:
 
