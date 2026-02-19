@@ -1,14 +1,15 @@
 # Different Backend LLMS
 
-9router
-bonsai cli
-deepseek
-gemini
-groq
-kiro ide
-ollama
-openrouter
-qwen code cli
+- 9router
+- bonsai cli
+- deepseek
+- gemini
+- groq
+- kiro ide
+- ollama
+- openrouter
+- qwen code cli
+- qwen
 
 # Setup guides on different platforms
 
