@@ -21,4 +21,4 @@
 - linux_setup
 - git_bash_setup
 - cmd_setup
-- - zsh_setup
+- zsh_setup
