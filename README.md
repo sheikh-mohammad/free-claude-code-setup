@@ -1,3 +1,15 @@
+# Different Backend LLMS
+
+- openrouter
+- groq
+- qwen
+- kiro
+- 9router
+- deepseek
+- gemini
+
+# Setup guides on different platforms
+
 powershell_setup  
 bash_setup  
 wsl_setup  
