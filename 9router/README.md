@@ -116,7 +116,7 @@ claude
 
 If setup is correct:
 
-The selected model (e.g., Qwen3 Coder Plus) will appear.
+The selected model `if/qwen3-coder-plus` will appear.
 
 You can type:
 
