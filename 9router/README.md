@@ -2,6 +2,8 @@
 
 This guide explains how to install and configure Claude Code using 9Router to use free AI providers.
 
+> **Note:** This setup is the same on both bash/powershell/cmd, etc., or any platform you are using. All the steps are the same and can be followed very easily.
+
 ## 📌 Step 1: Install 9Router Globally
 
 First, open Command Prompt (CMD) as root/global.
