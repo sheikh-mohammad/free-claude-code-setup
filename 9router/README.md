@@ -1,65 +1,186 @@
-# Welcome To Free Claude Code Setup using 9router
+# 🚀 How to Install Claude Code Using 9Router (Free Setup)
 
-In this guide, we will set up **Claude CLI for FREE using 9router** step
-by step.\
-Follow each step and you'll be ready to use AI models in your CLI.
+This guide explains how to install and configure Claude Code using 9Router to use free AI providers.
 
-------------------------------------------------------------------------
+## 📌 Step 1: Install 9Router Globally
 
-# Claude Free Setup with 9router (Step-by-Step)
+First, open Command Prompt (CMD) as root/global.
 
-## ⚡ Quick Start
+Run the following command:
 
-### 1) Install 9router globally
+```bash
+npm install -g 9router
+```
 
-Open your terminal and run:
+This will install 9Router globally on your system.
 
-    npm install -g 9router
+## 📌 Step 2: Run 9Router
 
 After installation, run:
 
-    9router
+```bash
+9router
+```
 
-🎉 Dashboard will open at:\
-http://localhost:20128
+You will see options like:
 
-Now open this localhost link in your browser.
+- Web UI
+- Terminal UI
+- Hide to Tray
 
-------------------------------------------------------------------------
+9Router will start a local server (localhost URL will appear in terminal).
 
-### 2) Connect a FREE provider (No signup needed)
+## 📌 Step 3: Open Dashboard in Browser
 
-Inside the dashboard:
+1. Copy the localhost URL shown in terminal.
+2. Paste it into your browser.
+3. Enter the default password:
 
--   Go to **Providers**
--   Click **Connect Claude Code**
--   Login using OAuth
--   Click **Done**
+```bash
+123456
+```
 
-Your Claude provider is now connected for free.
+You will now see the 9Router dashboard.
 
-------------------------------------------------------------------------
+## 📌 Step 4: Connect Free Provider
 
-### 3) Use Claude in your CLI tools
+1. Go to Providers (left sidebar).
+2. Click Add Connection.
+3. **Choose a free provider**: iFlow AI.
+4. Login using Google account.
+5. Authorize the connection.
 
-Open settings of any CLI tool:
+Once connected, the provider status should show:
 
--   Claude Code
--   Codex
--   Gemini CLI
--   OpenClaw
--   Cursor
--   Cline
+```
+Active
+Connected
+```
 
-Add the following configuration:
+## 📌 Step 5: Verify Provider in Terminal UI
 
-    Endpoint: http://localhost:20128/v1
-    API Key: [Copy from dashboard]
-    Model: if/kimi-k2-thinking
+Go back to CMD (where 9Router is running):
 
-------------------------------------------------------------------------
+1. Select Terminal UI
+2. Go to Provider
+3. Press Enter on your connected provider
+4. Check that status shows:
 
-## 🎉 Setup Complete!
+```
+Active
+```
 
-That's it!\
-You can now start coding using FREE AI models directly from your CLI.
+If active, everything is working correctly ✅
+
+## 📌 Step 6: Create API Key
+
+Now:
+
+1. Go to API Endpoint
+2. Click Create Key
+3. Give it any name (default is fine)
+4. Copy the generated API key
+
+⚠️ This key is required for Claude Code to work.
+
+## 📌 Step 7: Configure Claude Code Model
+
+1. Go to CLI Tools (left sidebar)
+2. Click Claude Port
+3. **Select all models:** Qwen3 Coder Plus model
+4. Click Save / Apply
+
+You should see:
+
+```
+Settings applied successfully
+```
+
+### ⚠️ Important
+
+DO NOT close the dashboard browser.
+
+DO NOT close the CMD where 9Router is running.
+
+If you close it, Claude Code will stop working.
+
+## 📌 Step 8: Run Claude Code
+
+Open a new CMD window.
+
+Type:
+
+```bash
+claude
+```
+
+If setup is correct:
+
+The selected model (e.g., Qwen3 Coder Plus) will appear.
+
+You can type:
+
+hello
+
+If Claude replies successfully, setup is complete 🎉
+
+### 🔁 If Limit Ends
+
+If usage limit ends:
+
+#### Option 1: Create New API Key
+
+- Delete old key
+- Create new key
+- Use it again
+
+#### Option 2: Change Model
+
+- Go to CLI Tools → Claude Port
+- Select another free model
+- Save & Apply
+
+### ✅ Setup Complete
+
+You have successfully configured:
+
+- 9Router
+- Free AI Provider
+- API Key
+- Claude Code CLI
+
+Now you can use Claude Code for free through 9Router.
+
+---
+
+---
+
+## 🔄 Optional: Run 9Router in Background (Hide to Tray)
+
+When you start 9Router, you will see this option:
+
+- Web UI  
+- Terminal UI  
+- **Hide to Tray**
+
+If you select **Hide to Tray**, 9Router will:
+
+- Run in the background  
+- Minimize to the system tray  
+- Keep Claude Code working without keeping the terminal open  
+- Start automatically when your system boots (if enabled)
+
+### 📍 Where is the System Tray?
+
+The **System Tray** is located:
+
+- On **Windows** → Bottom-right corner of the screen (near the clock, Wi-Fi, battery, and volume icons).  
+- You may need to click the small **up arrow (^)** to see hidden icons.  
+
+You will see the 9Router icon there when it is running in the background.
+
+> 💡 Recommended for users who frequently use Claude Code and want it running all the time.
+
+## ⭐ Support
+
+If this guide helped you, consider starring the repository on GitHub 😊
